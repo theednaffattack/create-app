@@ -21,6 +21,7 @@
     "@oclif/test": "^1.2.5",
     "@types/jest": "^25.1.4",
     "@types/node": "^10",
+    "chai": "^4.2.0",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
