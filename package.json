@@ -1,16 +1,50 @@
 {
-  "name": "@agent5/create-app",
+  "name": "create-app",
+  "description": "An opinionated CLI to start any Typescript, TS-React, or JS-React style project.",
   "version": "1.0.0",
-  "description": "",
-  "main": "mycli.js",
-  "bin": "mycli.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "eddie naff",
+  "bin": {
+    "create-app": "./bin/run"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bugs": "https://github.com/theednaffattack/create-app/issues",
   "dependencies": {
-    "np": "^6.2.0"
-  }
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "np": "^6.2.0",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/theednaffattack/create-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "create-app"
+  },
+  "repository": "theednaffattack/create-app",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
 }
