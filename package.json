@@ -11,15 +11,21 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "debug": "^4.1.1",
+    "jest": "^25.2.4",
+    "jest-diff": "^25.2.3",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1.2.5",
+    "@types/jest": "^25.1.4",
     "@types/node": "^10",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
     "np": "^6.2.0",
+    "ts-jest": "^25.2.1",
     "ts-node": "^8",
     "typescript": "^3.3"
   },
@@ -37,7 +43,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
-    "bin": "create-app"
+    "bin": "create-app",
+    "commands": "./lib/commands"
   },
   "repository": "theednaffattack/create-app",
   "scripts": {
