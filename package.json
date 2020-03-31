@@ -14,7 +14,8 @@
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
-    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
+    "copy-scaffolds": "if [ -e ./src/scaffolds ]; then cp -a ./src/scaffolds ./build/; fi",
+    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates && yarn copy-scaffolds",
     "prepublishOnly": "yarn build",
     "test": "echo \"No test specified\"",
     "watch": "jest --watch",
@@ -35,6 +36,9 @@
     "app-root-path": "^3.0.0",
     "get-installed-path": "^4.0.8",
     "gluegun": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/app-root-path": "^1.2.4",
