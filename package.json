@@ -1,13 +1,19 @@
 {
   "name": "@agent5/create-app",
   "version": "1.0.7",
+  "author": "Eddie Naff",
   "description": "create-app CLI --An opinionated CLI to start any Typescript, TS-React, or JS-React style project.",
   "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
     "create-app": "bin/create-app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theednaffattack/create-app.git"
+  },
   "bugs": "https://github.com/theednaffattack/create-app/issues",
+  "homepage": "https://github.com/theednaffattack/create-app#readme",
   "scripts": {
     "format": "prettier --write **/*.{js,ts,tsx,json}",
     "lint": "eslint . --ext .ts",
