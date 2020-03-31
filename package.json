@@ -16,7 +16,6 @@
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
     "copy-scaffolds": "if [ -e ./src/scaffolds ]; then cp -a ./src/scaffolds ./build/; fi",
     "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates && yarn copy-scaffolds",
-    "prepublishOnly": "yarn build",
     "test": "echo \"No test specified\"",
     "watch": "jest --watch",
     "snapupdate": "jest --updateSnapshot",
