@@ -3,7 +3,7 @@ import { GluegunToolbox } from "gluegun";
 module.exports = {
   name: "generate",
   alias: ["g"],
-  run: async (toolbox: GluegunToolbox) => {
+  run: async (toolbox: GluegunToolbox): Promise<void> => {
     const {
       parameters,
       template: { generate },

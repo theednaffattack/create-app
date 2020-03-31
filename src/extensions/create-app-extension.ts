@@ -10,11 +10,11 @@ interface TBoxCopyDirProps {
 
 // add your CLI-specific functionality here, which will then be accessible
 // to your commands
-module.exports = (toolbox: GluegunToolbox) => {
+module.exports = (toolbox: GluegunToolbox): void => {
   toolbox.copyDir = async ({
     templatePath,
     projectName: name
-  }: TBoxCopyDirProps) => {
+  }: TBoxCopyDirProps): Promise<void> => {
     const currentWorkingDirectory = toolbox.filesystem.cwd();
 
     // const tsGraphqlServerTemplate = `${path}/node_modules/create-app/src/scaffolds/typescript/back-end/ts-graphql`;

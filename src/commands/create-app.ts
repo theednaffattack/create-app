@@ -19,7 +19,9 @@ interface ServerOrClientOpts extends Omit<SelectTypeProps, "choices"> {
   choices: ServerOrClientChoices[];
 }
 
-interface ProjectNameOpts extends Omit<SelectTypeProps, "choices"> {}
+// interface ProjectNameOpts extends Omit<SelectTypeProps, "choices"> {}
+
+type ProjectNameOpts = Omit<SelectTypeProps, "choices">;
 
 const command: GluegunCommand = {
   name: "create-app",
