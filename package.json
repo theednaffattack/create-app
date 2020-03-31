@@ -1,6 +1,6 @@
 {
   "name": "create-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create-app CLI --An opinionated CLI to start any Typescript, TS-React, or JS-React style project.",
   "private": true,
   "types": "build/types/types.d.ts",
