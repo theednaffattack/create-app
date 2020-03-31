@@ -2,7 +2,7 @@
   "name": "@agent5/create-app",
   "version": "1.0.1",
   "description": "create-app CLI --An opinionated CLI to start any Typescript, TS-React, or JS-React style project.",
-  "private": true,
+  "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
     "create-app": "bin/create-app"
